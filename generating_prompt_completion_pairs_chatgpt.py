@@ -1,4 +1,6 @@
 import openai
+import json
+import jsonlines
 
 completion = openai.ChatCompletion.create(
   model = "gpt-3.5-turbo",
@@ -11,14 +13,9 @@ completion = openai.ChatCompletion.create(
 )
 sample = completion.choices[0].message.content
 
-sample
-
 sample.split('\n')
 
 # . Make sure append "###\n\n\n###" to the end of the text for prompt and append "###" to the end of the text for completion.
-
-import json
-import jsonlines
 
 # Specify the path to the output JSONL file
 jsonl_file = "/content/drive/MyDrive/data/jsons/finetuning_data_pdfs_chatgpt.jsonl"
