@@ -1,5 +1,4 @@
 # university-chatbot
-Project code for CSE 256.
 
 This repository contains code for creating a chatbot that works on a custom database. For the project we considered two databases that contain information for international students at UCSD, one is from HTML text extracted from the ISPO Webpages (UCSD) and the second, a set of PDFs uploaded by ISPO (UCSD.) The files in this repository perform the following function:
 1. `ChatGPT-Custom Knowledge Base.ipynb` - Contains code to install required packages and allows user to specify paths to txt/ pdf files and the notebook can then be run on a set of questions read from a CSV file, or the user can run individual queries from the code cell. The responses will contain the sources as well i.e., it will mention the webpages or the PDF(s) used to answer the query
